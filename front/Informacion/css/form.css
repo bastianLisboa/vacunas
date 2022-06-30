@@ -1,0 +1,77 @@
+.containerr{
+
+    margin: 2%;
+    padding:1%;
+}
+/*boton hover listar y añadir*/
+.boton_list{
+    padding:  10px 10px;
+    font-size: 15px;
+    border:  1,5px solid;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #1167e7;
+    border-radius: 7px;
+    min-width: 100px;
+    text-transform:uppercase;
+    font-weight: 600;
+    z-index: 0;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+}
+
+.boton_list::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#ffffff71,transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+    skew(-20deg);
+
+}
+
+.boton_list:hover::before{
+    transform: translateX(300px)skew(-20deg);
+}
+
+.boton_list:hover{
+    background: #003cff;
+}
+/*fin botones*/
+body{
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-section{
+    margin:0 auto;
+    margin-top:5%;
+}
+.card{
+	opacity: .95;
+}
+.card-body{
+    background-color: #1167e7;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+label{
+	font-weight: bold;
+}
+
+.nav-tabs .nav-item a:not(.active){
+	background-color: #d1d3d6;
+}
+
+.nav-tabs{
+	border-bottom:0px;
+}
